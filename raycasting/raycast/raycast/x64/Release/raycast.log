@@ -1,0 +1,26 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\rayo8\source\repos\raycasting\raycast\raycast>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64" -x cu   -IC:\Users\rayo8\source\repos\raycasting\raycast\raycast\include -IC:\Users\rayo8\source\repos\raycasting\raycast\raycast\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include"     --keep-dir x64\Release  -maxrregcount=0    --machine 64 --compile -cudart static    -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/Fdx64\Release\vc143.pdb" -o C:\Users\rayo8\source\repos\raycasting\raycast\raycast\x64\Release\kernel.cu.obj "C:\Users\rayo8\source\repos\raycasting\raycast\raycast\kernel.cu" 
+C:\Users\rayo8\source\repos\raycasting\raycast\raycast\kernel.cu(399): warning #2464-D: conversion from a string literal to "char *" is deprecated
+    	char* filemap = "./mapa.bmp";
+    	                ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\rayo8\source\repos\raycasting\raycast\raycast\kernel.cu(399): warning #2464-D: conversion from a string literal to "char *" is deprecated
+    	char* filemap = "./mapa.bmp";
+    	                ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+CUDACOMPILE : nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+  kernel.cu
+  tmpxft_000067f4_00000000-7_kernel.cudafe1.cpp
+     Creando biblioteca C:\Users\rayo8\source\repos\raycasting\raycast\x64\Release\raycast.lib y objeto C:\Users\rayo8\source\repos\raycasting\raycast\x64\Release\raycast.exp
+LINK : warning LNK4098: la biblioteca predeterminada'LIBCMT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  Generando código
+  0 of 334 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  raycast.vcxproj -> C:\Users\rayo8\source\repos\raycasting\raycast\x64\Release\raycast.exe
